@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . .
 RUN npm ci
 
-RUN echo 'TEST'
+RUN echo "TEST"
 
 ARG PORT
 EXPOSE ${PORT:-3000}
