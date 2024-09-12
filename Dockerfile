@@ -4,6 +4,8 @@ WORKDIR /app
 COPY . .
 RUN npm ci
 
+ARG KOYEB_GIT_SHA
+
 RUN echo "gitsha"
 ENV git_sha=${KOYEB_GIT_SHA}
 RUN echo "${git_sha}"
